@@ -1,0 +1,230 @@
+<header class="header__container">
+  <div class="header__logo-container">
+    <img class="header__logo" src="./duck.svg" alt="logo" />
+    <div class="header__logo-title">
+      <span class="header__text--orange">Duck</span>
+      <span class="header__text--blue">Shop</span>
+    </div>
+  </div>
+
+  <nav class="header__menu-container">
+    <ul class="header__menu">
+      <li class="header__menu-item"><a href="#">Главная</a></li>
+      <li class="header__menu-item">
+        <a href="#">
+          <div class="header__menu-item--catalog">
+            <span>Каталог</span>
+
+            <svg
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.5 8L10.5 12L14.5 8"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="header__menu-item"><a href="#">Блог</a></li>
+      <li class="header__menu-item"><a href="#">Отзывы</a></li>
+      <li class="header__menu-item"><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <!-- CTA Кнопка -->
+
+  <div class="header__action">
+    <a href="#" class="header__cart">
+      <svg
+        class="cart-icon"
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.5"
+          y="0.5"
+          width="39"
+          height="39"
+          rx="7.5"
+          class="stroke-border"
+        />
+        <path d="M15.3335 19.3334L18.0002 14.6667" class="stroke" />
+        <path d="M24.6667 19.3334L22 14.6667" class="stroke" />
+        <path d="M13.3335 19.3333H26.6668" class="stroke" />
+        <path
+          d="M14.3335 19.3333L15.4002 24.2666C15.4625 24.5723 15.6301 24.8465 15.8737 25.0414C16.1173 25.2363 16.4216 25.3396 16.7335 25.3333H23.2668C23.8668 25.3333 24.4668 24.8666 24.6002 24.2666L25.7335 19.3333"
+          class="stroke"
+        />
+        <path d="M18 19.3333L18.6667 25.3333" class="stroke" />
+        <path d="M15 22.3333H25" class="stroke" />
+        <path d="M22.0002 19.3333L21.3335 25.3333" class="stroke" />
+      </svg>
+    </a>
+    <button class="header__cta-button" id="modalBtn">
+      Заказать обратный звонок
+    </button>
+
+    <dialog class="header__call">
+      <button autofocus class="modal__close" id="closeModal"></button>
+      <div class="modal__content">
+        <form class="modal__form" id="callbackForm" method="dialog">
+          <label class="modal__label">
+            Имя <span class="modal__label-star">*</span>
+            <input
+              class="modal__input"
+              type="text"
+              name="name"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </label>
+
+          <label class="modal__label">
+            Телефон <span class="modal__label-star">*</span>
+            <input
+              class="modal__input"
+              type="tel"
+              name="phone"
+              placeholder="+7 000 000 00 00"
+              required
+            />
+          </label>
+
+          <button type="submit" class="header__cta-button modal__submit">
+            Отправить
+          </button>
+
+          <p class="modal__privacy">
+            Нажимая кнопку "Отправить", вы соглашаетесь с
+            <a href="#!">политикой конфиденциальности</a> и
+            <a href="#!">договором оферты</a>.
+          </p>
+        </form>
+      </div>
+    </dialog>
+
+    <button class="header__burger" id="burger">
+      <svg
+        width="42"
+        height="42"
+        viewBox="0 0 42 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="burger-icon"
+      >
+        <g filter="url(#filter0_d_3072_137)">
+          <path
+            d="M2 9C2 4.58172 5.58172 1 10 1H32C36.4183 1 40 4.58172 40 9V31C40 35.4183 36.4183 39 32 39H10C5.58172 39 2 35.4183 2 31V9Z"
+            class="burger-fill"
+          />
+          <path
+            d="M10 1.5H32C36.1421 1.5 39.5 4.85786 39.5 9V31C39.5 35.1421 36.1421 38.5 32 38.5H10C5.85786 38.5 2.5 35.1421 2.5 31V9C2.5 4.85786 5.85786 1.5 10 1.5Z"
+            class="burger-stroke"
+          />
+          <path
+            d="M15 16H27"
+            class="burger-line"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 20H27"
+            class="burger-line"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 24H27"
+            class="burger-line"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_3072_137"
+            x="0"
+            y="0"
+            width="42"
+            height="42"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_3072_137"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_3072_137"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    </button>
+
+    <dialog class="header__burger-dialog" id="dialogBurger">
+      <div class="header__burger-container">
+        <div class="header__burger-header">
+          <div class="header__logo-container">
+            <img class="header__logo" src="./duck.svg" alt="logo" />
+            <div class="header__logo-title">
+              <span class="header__text--orange">Duck</span>
+              <span class="header__text--blue">Shop</span>
+            </div>
+          </div>
+          <button
+            autofocus
+            class="modal__close"
+            id="closeBurger"
+            autofocus
+          ></button>
+        </div>
+        <ul class="header__burger-list">
+          <li class="header__menu-item"><a href="#">Главная</a></li>
+          <li class="header__menu-item"><a href="#">Каталог</a></li>
+          <li class="header__menu-item"><a href="#">Блог</a></li>
+          <li class="header__menu-item"><a href="#">Отзывы</a></li>
+          <li class="header__menu-item"><a href="#">Контакты</a></li>
+          <li>
+            <button
+              class="header__cta-button header__cta-burger"
+              id="modalBtnMobile"
+            >
+              Заказать обратный звонок
+            </button>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+
+    <!-- <div class="mobile-menu" id="mobileMenu"></div> -->
+  </div>
+</header>
